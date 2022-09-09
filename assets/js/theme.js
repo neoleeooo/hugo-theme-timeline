@@ -1,8 +1,8 @@
 // Toggle theme
 
-const theme = window.localStorage && window.localStorage.getItem("theme");
+const theme = "light";
 const themeToggle = document.querySelector(".theme-toggle");
-const isDark = theme === "light";
+const isDark = theme === "dark";
 var metaThemeColor = document.querySelector("meta[name=theme-color]");
 
 if (theme !== null) {
