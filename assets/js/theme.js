@@ -2,7 +2,7 @@
 
 const theme = window.localStorage && window.localStorage.getItem("theme");
 const themeToggle = document.querySelector(".theme-toggle");
-const isDark = theme === "dark";
+const isDark = theme === "light";
 var metaThemeColor = document.querySelector("meta[name=theme-color]");
 
 if (theme !== null) {
