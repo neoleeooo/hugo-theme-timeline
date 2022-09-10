@@ -21,7 +21,11 @@
                 <div class="date">{{ .Date.Format "Jan 2, 2006"}}</div>
                 <p>
                     {{.Params.Eventname}}<br>
-                    {{.Params.Eventlocation}}
+                    {{.Params.Eventlocation}}<br>
+
+                    {{ if .Params.Innerlink }}
+                    <a target="_blank" href="{{ .Params.Innerlink }}">{{ .Params.Innerlinktitle }}</a>
+                    {{ end }}
 
                 </p> 
             </div>
